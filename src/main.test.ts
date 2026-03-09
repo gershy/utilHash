@@ -1,5 +1,5 @@
-import { assertEqual } from '../build/utils.test.ts';
-import './main.ts';
+import { assertEqual, testRunner } from '../build/utils.test.ts';
+import hash from './main.ts';
 
 // Type testing
 (async () => {
@@ -12,33 +12,14 @@ import './main.ts';
   
 })();
 
-// Test cases
-(async () => {
+testRunner([
   
-  const cases = [
+  { name: 'basic', fn: async () => {
     
-    { name: 'not implemented', fn: async () => {
-      
-      // TODO: Implement!
-      
-    }}
+    const result  = await hash('testing time');
+    // console.log({ result });
+    // const result2 = await hash(Buffer.from('testing time'));
     
-  ];
-  for (const { name, fn } of cases) {
-    
-    try {
-      
-      await fn();
-      
-    } catch (err: any) {
-      
-      console.log(`FAILED: "${name}"`, err[limn]());
-      process.exit(1);
-      
-    }
-    
-  }
+  }}
   
-  console.log(`Passed ${cases.length} test${cases.length === 1 ? '' : 's'}`);
-  
-})();
+]);
