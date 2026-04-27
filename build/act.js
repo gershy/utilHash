@@ -124,6 +124,11 @@ import esbuild from 'esbuild';
           
         }));
         
+        await fs.writeFile(
+          path.join(cmpFp, target),
+          JSON.stringify({ type: { cjs: 'commonjs', esm: 'module' }[target] })
+        );
+        
       }));
       
     }
