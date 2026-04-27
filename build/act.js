@@ -125,7 +125,7 @@ import esbuild from 'esbuild';
         }));
         
         await fs.writeFile(
-          path.join(cmpFp, target),
+          path.join(cmpFp, target, 'package.json'),
           JSON.stringify({ type: { cjs: 'commonjs', esm: 'module' }[target] })
         );
         
