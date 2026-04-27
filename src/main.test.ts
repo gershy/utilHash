@@ -1,5 +1,5 @@
 import { assertEqual, testRunner } from '../build/utils.test.ts';
-import hash from './main.ts';
+import './main.ts';
 
 // Type testing
 (async () => {
@@ -14,11 +14,9 @@ import hash from './main.ts';
 
 testRunner([
   
-  { name: 'basic', fn: async () => {
+  { name: 'not implemented', fn: async () => {
     
-    const result  = await hash('testing time');
-    // console.log({ result });
-    // const result2 = await hash(Buffer.from('testing time'));
+    // TODO: Implement!
     
   }}
   

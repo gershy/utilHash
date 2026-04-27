@@ -1,27 +1,27 @@
 {
+  "version": "0.0.6",
   "name": "@gershy/util-hash",
-  "version": "0.0.5",
-  "description": "TODO",
-  "keywords": [
-    "TODO"
-  ],
-  "author": "Gershom Maes",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gershy/utilHash.git"
+    "url": "git+https://github.com/gershy/utilHash.git",
+    "type": "git"
   },
   "bugs": {
     "url": "https://github.com/gershy/utilHash/issues"
   },
   "homepage": "https://github.com/gershy/utilHash#readme",
+  "description": "TODO",
+  "keywords": [
+    "TODO"
+  ],
+  "author": "Gershom Maes",
   "license": "ISC",
   "peerDependencies": {
     "@gershy/clearing": "^0.0.36"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "esbuild": "^0.28.0"
   },
   "type": "module",
   "files": [
