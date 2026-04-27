@@ -1,5 +1,5 @@
 {
-  "version": "0.0.8",
+  "version": "0.0.9",
   "name": "@gershy/util-hash",
   "repository": {
     "url": "git+https://github.com/gershy/utilHash.git",
@@ -28,11 +28,9 @@
   "files": [
     "cmp"
   ],
-  "sideEffects": false,
-  "types": "./cmp/mjs/main.d.ts",
   "exports": {
     ".": {
-      "import": "./cmp/mjs/main.js",
+      "import": "./cmp/esm/main.js",
       "require": "./cmp/cjs/main.js"
     }
   },
